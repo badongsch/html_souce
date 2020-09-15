@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Book travel</title>
+	</head>
+	<body>
+		<h1>내사이트 임</h1>
+		<input type="text" id="bookName" value="" />
+		<button id="search">검색</button>
+		<p></p>
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('#search').click(function () {
+					$.ajax({
+						method: 'GET',
+						//url: 'https://book.interpark.com/api/bestSeller.api?key=F896AEABA904C4F57D1AC36B427418CD409F48BB7AED08A20C558D04D13CF424&categoryId=100&output=json'
+						url: 'https://dapi.kakao.com/v3/search/book?sort=recency&page=1&size=5',
+						data: { query: $("#bookName").val() },
+						headers: { Authorization: 'KakaoAK 1d758070d9e2e1f871f3d2e06a515f65' },
+					}).done(function (msg) {
+						//console.log(msg);
+						$('p').append('<strong>' + msg.documents[0].title + '</strong>');
+						$('p').append("<img src='" + msg.documents[0].thumbnail + "'>");
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

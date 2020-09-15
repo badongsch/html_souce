@@ -1,0 +1,9 @@
+
+1. GitHub의 기초와 활용 및 Netlify 연동(배포)
+* GitHub의 기초
+git init
+git add 파일명 =>( . = 전체 파일)
+git commit -m "메시지"
+git remote add origin https://github.com/badongsch/animalface.git
+git push -u origin master
+

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--
+	Road Trip by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Book travel by badong</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Book travel" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Book travel" />
+		<meta property="og:description" content="Book travel" />
+		<meta property="og:image" content="https://book-travel.netlify.app/logo.png" />
+		<meta property="og:url" content="https://book-travel.netlify.app" />
+		<link rel="canonical" href="https://book-travel.netlify.app" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" />
+		<meta name="naver-site-verification" content="c18a95c852c59b3a7c08d35626f2427d036fcfb8" />
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<a href="index.html">Book travel <span>by badong</span></a>
+			</div>
+			<a href="#menu"><span>Menu</span></a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="generic.html">Generic</a></li>
+				<li><a href="elements.html">Elements</a></li>
+			</ul>
+		</nav>
+
+		<!-- Banner -->
+		<!--
+			Note: To show a background image, set the "data-bg" attribute below
+			to the full filename of your image. This is used in each section to set
+			the background image.
+		-->
+		<section id="banner" class="bg-img" data-bg="banner.jpg">
+			<div class="inner">
+				<header>
+					<h1>This is Book Travel</h1>
+				</header>
+			</div>
+			<a href="#one" class="more">Learn More</a>
+		</section>
+
+		<span id="content_list">
+			<!-- One -->
+			<!-- <section id="one" class="wrapper post bg-img" data-bg="banner2.jpg">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>인문학으로 광고하다</h2>
+							<p>2009-08-27</p>
+						</header>
+						<div class="content">
+							<img
+								src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F1377134%3Ftimestamp%3D20200908144102"
+							/>
+							<p>
+								『인문학으로 광고하다』는 창의성에 관한 책이다. 이 책은 창의성에
+								대해 이야기하기 위해서 광고라는 도구를 이용한다. 박웅현이 만든 가치
+								중심적인 광고는 창의성의 비밀은 인문학적 소양에 있다고 말한다. 깊이
+								있는 생각을 담은 광고로 소통하는 남자, 박웅현을 만나본다. 전
+								세계적으로 창의성에 대한 요구는 날로 커지고 있다. 그렇다면
+								창의성이란 과연 무엇인가. 미하이 칙센트미하이는 ‘창의성은
+								무엇인가’라는 질문을 ‘창의성은 어디에 있는가’로 바꾸어보자고 제안
+							</p>
+						</div>
+						<footer>
+							<a href="generic.html" class="button alt">Learn More</a>
+						</footer>
+					</article>
+				</div>
+				<a href="#two" class="more">Learn More</a>
+			</section> -->
+		</span>
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<h2>Contact Me</h2>
+
+				<form action="#" method="post">
+					<div class="field half first">
+						<label for="name">Name</label>
+						<input name="name" id="name" type="text" placeholder="Name" />
+					</div>
+					<div class="field half">
+						<label for="email">Email</label>
+						<input name="email" id="email" type="email" placeholder="Email" />
+					</div>
+					<div class="field">
+						<label for="message">Message</label>
+						<textarea
+							name="message"
+							id="message"
+							rows="6"
+							placeholder="Message"
+						></textarea>
+					</div>
+					<ul class="actions">
+						<li><input value="Send Message" class="button alt" type="submit" /></li>
+					</ul>
+				</form>
+
+				<ul class="icons">
+					<li>
+						<a href="#" class="icon round fa-twitter"
+							><span class="label">Twitter</span></a
+						>
+					</li>
+					<li>
+						<a href="#" class="icon round fa-facebook"
+							><span class="label">Facebook</span></a
+						>
+					</li>
+					<li>
+						<a href="#" class="icon round fa-instagram"
+							><span class="label">Instagram</span></a
+						>
+					</li>
+				</ul>
+
+				<div class="copyright">
+					&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images:
+					<a href="https://unsplash.com">Unsplash</a>.
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				//$('#search').click(function () {
+				//list();
+				list2(100);
+			});
+
+			function list2(idx) {
+				var flickerAPI = 'https://book.interpark.com/api/bestSeller.api?callback=?';
+				var k_img = 0;
+				$.ajax({
+					url: flickerAPI,
+					data: {
+						key: 'F896AEABA904C4F57D1AC36B427418CD409F48BB7AED08A20C558D04D13CF424',
+						categoryId: idx,
+						output: 'json',
+					},
+					dataType: 'jsonp',
+				}).done(function (data) {
+					//console.log(data);
+					$.each(data.item, function (k, v) {
+						var k_img = (k % 4) + 2;
+						$('#content_list').append(
+							"<section id='list" +
+								k +
+								"' class='wrapper post bg-img' data-bg='banner" +
+								k_img +
+								".jpg'><div class='inner'><article class='box'><header><h2>" +
+								v.title +
+								'</h2><p>' +
+								v.pubDate +
+								"</p><div class='content'><img src='" +
+								v.coverSmallUrl +
+								"'/><p>" +
+								v.description +
+								"</p></div><footer><a href='" +
+								v.link +
+								"' class='button alt'>Learn More</a></footer></article></div></section>"
+						);
+
+						if ($('.bg-img').length) {
+							$('.bg-img').each(function () {
+								var post = $(this),
+									bg = post.data('bg');
+								post.css('background-image', 'url(images/' + bg + ')');
+							});
+						}
+
+						$('.post').each(function () {
+							var p = $(this),
+								i = p.find('.inner'),
+								m = p.find('.more');
+
+							m.addClass('scrolly');
+
+							p.scrollex({
+								top: '40vh',
+								bottom: '40vh',
+								terminate: function () {
+									m.removeClass('current');
+									i.removeClass('current');
+								},
+								enter: function () {
+									m.addClass('current');
+									i.addClass('current');
+								},
+								leave: function () {
+									m.removeClass('current');
+									i.removeClass('current');
+								},
+							});
+						});
+					});
+				});
+			}
+
+			// async function list() {
+			// 	$.ajax({
+			// 		method: 'GET',
+			// 		url: 'https://realmgrdev.realclick.co.kr/badong/20200909.html',
+			// 	}).done(function (msg) {
+			// 		$('#content_list').append(msg);
+
+			// 		if ($('.bg-img').length) {
+			// 			$('.bg-img').each(function () {
+			// 				var post = $(this),
+			// 					bg = post.data('bg');
+			// 				post.css('background-image', 'url(images/' + bg + ')');
+			// 			});
+			// 		}
+
+			// 		$('.post').each(function () {
+			// 			var p = $(this),
+			// 				i = p.find('.inner'),
+			// 				m = p.find('.more');
+
+			// 			m.addClass('scrolly');
+
+			// 			p.scrollex({
+			// 				top: '40vh',
+			// 				bottom: '40vh',
+			// 				terminate: function () {
+			// 					m.removeClass('current');
+			// 					i.removeClass('current');
+			// 				},
+			// 				enter: function () {
+			// 					m.addClass('current');
+			// 					i.addClass('current');
+			// 				},
+			// 				leave: function () {
+			// 					m.removeClass('current');
+			// 					i.removeClass('current');
+			// 				},
+			// 			});
+			// 		});
+			// 	});
+			// }
+		</script>
+	</body>
+</html>
